@@ -494,7 +494,7 @@ open class __TableFeedController: UIViewController, TTTableFeedController, TTDat
         cell.parentViewController = nil
     }
     
-    public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    open func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.parentViewController = _cellController.parentViewController
         
         checkIfShouldLoadMoreContent()
